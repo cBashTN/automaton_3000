@@ -15,6 +15,10 @@
     </ItemGroup>
   
     <ItemGroup>
+      <ProjectReference Include="..\automaton_3000ML.Model\automaton_3000ML.Model.csproj" />
+    </ItemGroup>
+  
+    <ItemGroup>
       <None Update="Input\crew.json">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </None>

@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31220.234
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtractFeatures", "ExtractFeatures\ExtractFeatures.csproj", "{D3D16068-3940-46D8-91B8-D53094E2A851}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExtractFeatures", "ExtractFeatures\ExtractFeatures.csproj", "{D3D16068-3940-46D8-91B8-D53094E2A851}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "automaton_3000ML.Model", "automaton_3000ML.Model\automaton_3000ML.Model.csproj", "{A9E2F0CC-433B-46AE-B1EC-360DE0FEC5FC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "automaton_3000ML.ConsoleApp", "automaton_3000ML.ConsoleApp\automaton_3000ML.ConsoleApp.csproj", "{D9C8175D-8F2B-41F5-8506-8A39165ADBB2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{D3D16068-3940-46D8-91B8-D53094E2A851}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3D16068-3940-46D8-91B8-D53094E2A851}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3D16068-3940-46D8-91B8-D53094E2A851}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9E2F0CC-433B-46AE-B1EC-360DE0FEC5FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9E2F0CC-433B-46AE-B1EC-360DE0FEC5FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9E2F0CC-433B-46AE-B1EC-360DE0FEC5FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9E2F0CC-433B-46AE-B1EC-360DE0FEC5FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9C8175D-8F2B-41F5-8506-8A39165ADBB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9C8175D-8F2B-41F5-8506-8A39165ADBB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9C8175D-8F2B-41F5-8506-8A39165ADBB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9C8175D-8F2B-41F5-8506-8A39165ADBB2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
