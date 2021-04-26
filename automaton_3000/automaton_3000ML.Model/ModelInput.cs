@@ -6,8 +6,8 @@ namespace Automaton_3000ML.Model
 {
     public class ModelInput
     {
-        [ColumnName("BigBookTier"), LoadColumn(0)]
-        public float BigBookTier { get; set; }
+        [ColumnName("Label"), LoadColumn(0)]
+        public float Label { get; set; }
 
 
         [ColumnName("SkillsCount"), LoadColumn(1)]

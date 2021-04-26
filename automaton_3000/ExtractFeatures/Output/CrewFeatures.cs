@@ -13,7 +13,7 @@ namespace ExtractFeatures.Output
         /// <summary>
         /// This is the target. Not normalized.
         /// </summary>
-        [JsonProperty("bigbook_tier")] public float BigBookTier { get; set; }
+        [JsonProperty("bigbook_tier")] public float Label { get; set; }
 
         /// <summary>
         /// The count of skills. "DIP"+"SEC" = 2 skills

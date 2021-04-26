@@ -9,6 +9,9 @@ namespace Automaton_3000ML.ConsoleApp
     {
         static void Main(string[] args)
         {
+
+            ModelBuilder.ShowFeatureImportanceAndWeights();
+
             // Create single instance of sample data from first line of dataset for model input
             ModelInput sampleData = new ModelInput()
             {
@@ -103,7 +106,7 @@ namespace Automaton_3000ML.ConsoleApp
             // Make a single prediction on the sample data and print results
             var predictionResult = ConsumeModel.Predict(sampleData);
 
-            Console.WriteLine("Using model to make single prediction -- Comparing actual BigBookTier with predicted BigBookTier from sample data...\n\n");
+            Console.WriteLine("Using model to make single prediction -- Comparing actual Label with predicted Label from sample data...\n\n");
             Console.WriteLine($"SkillsCount: {sampleData.SkillsCount}");
             Console.WriteLine($"SkillsCombinationRarity: {sampleData.SkillsCombinationRarity}");
             Console.WriteLine($"SkillsCombinationRarityPerCrewRarity: {sampleData.SkillsCombinationRarityPerCrewRarity}");
@@ -190,7 +193,7 @@ namespace Automaton_3000ML.ConsoleApp
             Console.WriteLine($"ActionPenaltyType: {sampleData.ActionPenaltyType}");
             Console.WriteLine($"ActionPenaltyAmount: {sampleData.ActionPenaltyAmount}");
             Console.WriteLine($"TraitsCount: {sampleData.TraitsCount}");
-            Console.WriteLine($"\n\nPredicted BigBookTier: {predictionResult.Score}\n\n");
+            Console.WriteLine($"\n\nPredicted Label: {predictionResult.Score}\n\n");
             Console.WriteLine("=============== End of process, hit any key to finish ===============");
             Console.ReadKey();
         }

@@ -36,7 +36,7 @@ namespace ExtractFeatures
 
                 var crewFeatures = new CrewFeatures
                 {
-                    BigBookTier                          = crewMember.BigbookTier,
+                    Label                                = crewMember.BigbookTier,
                     SkillsCount                          = ExtractSkillsCount(crewMember.BaseSkills),
                     SkillsCombinationRarity              = skillsComboInfo.Rarity,
                     SkillsCombinationRarityPerCrewRarity = skillsComboInfo.RarityPerCrewRarity,
@@ -130,6 +130,10 @@ namespace ExtractFeatures
                 crewsFeatures.Add(crewFeatures);
             }
 
+            //remove captain tribble
+            crewsFeatures.Remove(crewsFeatures.Single(_ => _.Label < 1.0));
+//          crewsFeatures.ForEach(_ => _.Label /= crewsFeatures.Max(f => f.Label));
+
             Console.WriteLine($"Output Crew Count : {crewsFeatures.Count}");
 
             if (!Directory.Exists("./Output/"))
@@ -145,10 +149,6 @@ namespace ExtractFeatures
             }
 
             Console.WriteLine("CSV exported.");
-
-
-            ////remove captain tribble
-            //crewsFeatures.Remove(crewsFeatures.Single(_ => _.BigBookTier < 1.0));
 
             //crewsFeatures.ForEach(_ => _.SkillsCount /= crewsFeatures.Max(f => f.SkillsCount));
             ////todo all or do this with ML.NET later
