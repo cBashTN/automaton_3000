@@ -45,7 +45,8 @@ namespace Automaton_3000ML.ConsoleApp
             foreach (var allCrewDataWithName in GetAllInputCrew())
             {
                 var res = ConsumeModel.Predict(allCrewDataWithName.Value);
-                Console.WriteLine($"{allCrewDataWithName.Key,-30}\t{res.Score:0.###}\t{allCrewDataWithName.Value.MaxRarity:0.###}");
+
+                Console.WriteLine($"{allCrewDataWithName.Value.Name,-30}\t{allCrewDataWithName.Value.MaxRarity:0.###}\t{res.Score:0.###}");
             }
 
 
@@ -235,7 +236,7 @@ namespace Automaton_3000ML.ConsoleApp
              Console.ReadKey();*/
 
         }
-        
+
 
     }
 }

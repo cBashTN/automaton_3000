@@ -2,6 +2,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using Microsoft.ML;
@@ -27,7 +28,13 @@ namespace Automaton_3000ML.Model
             MLContext mlContext = new MLContext();
 
             // Load model & create prediction engine
-            string modelPath = @"..\MLModel.zip";
+            string modelPath = @"MLModel.zip";
+            if (!File.Exists(modelPath))
+            {
+                throw new FileNotFoundException();
+
+            }
+
             ITransformer mlModel = mlContext.Model.Load(modelPath, out var modelInputSchema);
             var predEngine = mlContext.Model.CreatePredictionEngine<ModelInput, ModelOutput>(mlModel);
 
