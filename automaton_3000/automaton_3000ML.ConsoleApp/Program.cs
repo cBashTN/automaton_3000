@@ -10,7 +10,7 @@ namespace Automaton_3000ML.ConsoleApp
         static void Main(string[] args)
         {
 
-            ModelBuilder.ShowFeatureImportanceAndWeights();
+            FeatureImportance.ShowFeatureImportanceAndWeights();
 
             // Create single instance of sample data from first line of dataset for model input
             ModelInput sampleData = new ModelInput()
