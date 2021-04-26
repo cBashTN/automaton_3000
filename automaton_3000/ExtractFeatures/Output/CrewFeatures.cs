@@ -148,5 +148,8 @@ namespace ExtractFeatures.Output
         /// NEEDS one hot encoding
         /// </summary>
         [JsonProperty("traits_hidden")] public string TraitsHidden { get; set; }
+
+
+        [JsonProperty("Name")] public string Name { get; set; }
     }
 }

@@ -37,6 +37,7 @@ namespace ExtractFeatures
                 var crewFeatures = new CrewFeatures
                 {
                     Label                                = crewMember.BigbookTier,
+                    Name                                 = crewMember.Name,
                     SkillsCount                          = ExtractSkillsCount(crewMember.BaseSkills),
                     SkillsCombinationRarity              = skillsComboInfo.Rarity,
                     SkillsCombinationRarityPerCrewRarity = skillsComboInfo.RarityPerCrewRarity,

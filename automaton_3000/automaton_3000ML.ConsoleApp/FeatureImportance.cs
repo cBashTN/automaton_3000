@@ -24,7 +24,7 @@ namespace Automaton_3000ML.ConsoleApp
             string[] featureColumnNames =
                 trainingDataView.Schema
                     .Select(column => column.Name)
-                    .Where(columnName => columnName != "Label" && columnName != "BigBookTier" && columnName != "Traits" && columnName != "TraitsHidden").ToArray();
+                    .Where(columnName => columnName != "Label" && columnName != "Name" && columnName != "Traits" && columnName != "TraitsHidden").ToArray();
 
             var trainer = ModelBuilder.mlContext.Regression.Trainers.FastTree(new FastTreeRegressionTrainer.Options() { NumberOfLeaves = 7, MinimumExampleCountPerLeaf = 1, NumberOfTrees = 500, LearningRate = 0.07587501f, Shrinkage = 2.60485f, LabelColumnName = "Label", FeatureColumnName = "Features" });
 

@@ -5,8 +5,10 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="27.0.1" />
     <PackageReference Include="Microsoft.ML" Version="1.5.0-preview2" />
     <PackageReference Include="Microsoft.ML.FastTree" Version="1.5.0-preview2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\automaton_3000ML.Model\automaton_3000ML.Model.csproj" />

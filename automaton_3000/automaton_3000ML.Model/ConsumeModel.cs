@@ -27,7 +27,7 @@ namespace Automaton_3000ML.Model
             MLContext mlContext = new MLContext();
 
             // Load model & create prediction engine
-            string modelPath = @"C:\Users\sebas\AppData\Local\Temp\MLVSTools\automaton_3000ML\automaton_3000ML.Model\MLModel.zip";
+            string modelPath = @"..\MLModel.zip";
             ITransformer mlModel = mlContext.Model.Load(modelPath, out var modelInputSchema);
             var predEngine = mlContext.Model.CreatePredictionEngine<ModelInput, ModelOutput>(mlModel);
 

@@ -361,6 +361,9 @@ namespace Automaton_3000ML.Model
         [ColumnName("TraitsHidden"), LoadColumn(88)]
         public string TraitsHidden { get; set; }
 
+        [ColumnName("Name"), LoadColumn(89)]
+        public string Name { get; set; }
+
 
     }
 }
